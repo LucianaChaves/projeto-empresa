@@ -1,0 +1,24 @@
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.sub-header { grid-area: sub-header; }
+.main-container { grid-area: main; }
+.lista-container { grid-area: lista; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header header header'
+    'menu sub-header sub-header sub-header sub-header'
+    'menu main main main lista';
+    grid-template-rows: 8vh 22vh 65.9vh;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div, main, article, aside, header {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
