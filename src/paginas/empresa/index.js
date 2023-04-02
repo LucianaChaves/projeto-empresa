@@ -7,12 +7,12 @@ function Empresa() {
     return (
         <section class="grid-container">
             <header class="header">
-                Header
+                Cabeçalho
             </header>
-            <aside class="menu">Menu</aside>
-            <article class="sub-header">Sub header</article>
-            <main class="main-container">main</main>
-            <article class="lista-container">lista</article>
+            <aside className="menu">Menu</aside>
+            <article className="sub-header">Sub header</article>
+            <main className="main-container">main</main>
+            <article className="lista-container">index</article>
         </section>
 
     );

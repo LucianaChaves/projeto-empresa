@@ -1,8 +1,24 @@
-.header { grid-area: header; }
-.menu { grid-area: menu; }
-.sub-header { grid-area: sub-header; }
-.main-container { grid-area: main; }
-.lista-container { grid-area: lista; }
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.sub-header {
+  grid-area: sub-header;
+}
+
+.main-container {
+  grid-area: main;
+}
+
+.lista-container {
+  grid-area: lista;
+}
+
+
 
 .grid-container {
   display: grid;
@@ -10,15 +26,49 @@
     'menu header header header header'
     'menu sub-header sub-header sub-header sub-header'
     'menu main main main lista';
-    grid-template-rows: 8vh 22vh 65.9vh;
-  gap: 10px;
-  background-color: #2196F3;
+  grid-template-rows: 8vh 22vh 65.9vh;
+  background-color: #f3f1f1;
   padding: 10px;
 }
 
-.grid-container > div, main, article, aside, header {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+.header,
+.menu,
+.sub-header,
+.main-container,
+.lista-container {
+
+  background: white;
+
+}
+
+.sub-header,
+.main-container,
+.lista-container {
+
+  border-radius: 24.48px;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.sub-header,
+.main-container {
+
+  margin-left: 43px;
+
+}
+
+.main-container,
+.lista-container {
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.205)
+}
+
+.sub-header {
+
+  margin-top: 36px;
+}
+
+.header {
+
+  margin-left: 2px;
 }
